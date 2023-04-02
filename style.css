@@ -1,0 +1,327 @@
+@import url("./mobile.css");
+
+body{
+    background-color: #fff;
+    margin: 0;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #727272;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+
+/* Header */
+.header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    position: absolute;
+    z-index: 10;
+
+    background-color: #EEEFF1;
+}
+
+.menu{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-logo{
+    font-family: 'Revalia', cursive;
+    font-size: 40px;
+    color: #34547A;
+}
+
+.navigation{
+    width: 55%;
+    max-width: 100%;
+}
+
+.nav{
+    justify-content: space-around;
+    display: flex;
+    text-align: center;
+
+    padding-top: 20px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1.5px;
+}
+
+.nav-link:hover{
+    color: #34547A;
+}
+
+
+/* Intro */
+.intro{
+    width: 100%;
+    max-width: 100%;
+    height: 580px;
+    display: flex;
+    justify-content: center;
+
+    background-color: #EEEFF1;
+}
+
+.intro-conteiner{
+    margin: auto;
+    padding-top: 70px;
+    width: 60%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro-image{
+    padding-top: 30px;
+}
+
+.intro-content{
+    width: 500px;
+}
+
+.intro-title{
+    font-size: 40px;
+    font-weight: 500;
+    color: black;
+
+    /* margin-bottom: 35px; */
+}
+
+.intro-text{
+    width: 445px;
+    max-width: 100%;
+    padding-top: 35px;
+}
+
+.intro-link{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+
+    display: flex;
+    margin-top: 35px; 
+}
+
+.intro-button{
+    height: 60px;
+    width: 200px;
+    max-width: 100%;
+    background-color: #34547A;
+
+    letter-spacing: 1px;
+    padding-top: 20px;
+}
+
+
+/* About */
+.about{
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    display: flex;
+}
+
+.about-conteiner{
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+
+    width: 470px;
+    max-width: 100%;
+}
+
+.about-title{
+    font-size: 32px;
+    font-weight: 500;
+    color: black;
+
+    margin-bottom: 30px;
+}
+
+
+/* 40+ projects */
+.projects{
+    display: flex;
+
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+
+    background-color: #34547A;
+    color: #fff;
+}
+
+.projects-conteiner{
+    width: 1000px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.projects-content{
+    display: flex;
+    margin: auto;
+}
+
+.projects-footnote{
+    margin-left: 20px;
+}
+
+.projects-title{
+    font-weight: 500;
+}
+
+/* Skills */
+.skills{
+    display: flex;
+
+    width: 100%;
+    max-width: 100%;
+    height: 450px;
+}
+
+.skills-conteiner{
+    display: flex;
+    margin: auto;
+    width: 60em;
+
+    justify-content: space-between;
+}
+
+.skills-content{
+    margin: auto;
+    margin-left: 0;
+}
+
+.skills-title{
+    font-weight: 500;
+    font-size: 32px;
+    color: black;
+
+    padding-bottom: 15px;
+}
+
+.skills-text{
+    margin-bottom: 5px;
+}
+
+.skills-level{
+    width: 300px;
+    height: 3.5px;
+    background: linear-gradient(to right, #34547A 70%, #C4C4C4 50%);
+    
+
+    margin-bottom: 10px;
+}
+
+
+/* Technologies */
+.technologies{
+    background-color: #EEEFF1;
+    display: flex;
+}
+
+.technologies-conteiner{
+    margin: auto;
+    display: flex;
+}
+
+.technologies-content{
+    justify-content: center;
+    text-align: center;
+}
+
+.technologies-title{
+    font-weight: 500;
+    font-size: 32px;
+    color: black;
+
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.technologies-text{
+    width: 30em;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.video{
+    width: 1100px;
+    height: 600px;
+    margin-bottom: 50px;
+}
+
+
+/* Photo */
+.photoes{
+    margin-top: 1em;
+}
+.photo-conteiner-1, .photo-conteiner-2{
+    margin: auto;
+    display: flex;
+}
+
+.photo{
+    position: relative;
+}
+
+.photo:hover .item-svg{
+    opacity: 1;
+}
+
+.item-img{
+    background-color: #34537a;
+    transition: transform .2s linear;
+}
+
+.item-img img {
+    display: block;
+    transition: opacity .2s linear;
+}
+
+.photo:hover .item-img img {
+    opacity: .5;
+}
+
+.photo:hover .item-svg {
+    opacity: 1;
+}
+
+.item-svg{
+    align-items: center;
+    opacity: 0;
+    left: 38%;
+    top: 45%;
+
+    position: absolute;
+    z-index: 2;
+    transition: opacity .4s linear;
+}
+
+
+/* Microsoft */
+.microsoft{
+    margin: 3em 0 5em;
+}
+
+.microsoft-conteiner{
+    display: flex;
+    justify-content: space-around;
+    width: 70em;
+    margin: auto;
+}
